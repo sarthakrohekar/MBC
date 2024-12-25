@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Operand1"
+        android:layout_width="281dp"
+        android:layout_height="60dp"
+        android:hint="Enter the first operand"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <LinearLayout
+        android:layout_width="322dp"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.223">
+
+        <Button
+            android:id="@+id/btnadd"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textAlignment="center"
+            android:backgroundTint="#2290E6">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnsubtract"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textAlignment="center"
+            android:backgroundTint="#2290E6">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnmultiply"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textAlignment="center"
+            android:backgroundTint="#2290E6">
+        </Button>
+
+        <Button
+            android:id="@+id/btndivide"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textAlignment="center"
+            android:backgroundTint="#2290E6">
+
+        </Button>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/Operand2"
+        android:layout_width="281dp"
+        android:layout_height="60dp"
+        android:hint="Enter the second operand"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.353" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+
+    <TextView
+        android:id="@+id/textViewEquation"
+        android:layout_width="249dp"
+        android:layout_height="47dp"
+        android:hint="Equation will be displayed here."
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.598" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="243dp"
+        android:layout_height="53dp"
+        android:hint="Result will be displayed here."
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.693" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
