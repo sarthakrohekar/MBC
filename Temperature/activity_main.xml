@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- TextView to prompt the user to select input scale -->
+    <TextView
+        android:id="@+id/textViewInputScale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select temperature scale"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Buttons to select input temperature scale -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonCelsius"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Celsius" />
+
+        <Button
+            android:id="@+id/buttonKelvin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kelvin" />
+
+        <Button
+            android:id="@+id/buttonFahrenheit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fahrenheit" />
+    </LinearLayout>
+
+    <!-- EditText to input temperature value -->
+    <EditText
+        android:id="@+id/editTextTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter temperature"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Buttons to select output temperature scale -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonToCelsius"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="To Celsius" />
+
+        <Button
+            android:id="@+id/buttonToKelvin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="To Kelvin" />
+
+        <Button
+            android:id="@+id/buttonToFahrenheit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="To Fahrenheit" />
+    </LinearLayout>
+
+    <!-- TextView to display the converted temperature -->
+    <TextView
+        android:id="@+id/textViewOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converted Temperature: "
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
